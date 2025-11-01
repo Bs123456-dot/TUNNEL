@@ -12,7 +12,7 @@ connected_users = {}
 def home():
     return "🚀 Tunnel Relay on Render is running!"
 
-@app.route("/message", methods=["POST"])
+@app.route("/whatsapp", methods=["POST"])
 def twilio_message():
     sender = request.values.get("From")
     body = request.values.get("Body")
